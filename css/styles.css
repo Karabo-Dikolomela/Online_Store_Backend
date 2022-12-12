@@ -19,6 +19,16 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+.custom-bg {
+    background-color: var(--teal);
+    border: 1px solid var(--teal);
+}
+
+.custom-bg:hover {
+    background-color: var(--teal_hover);
+    border-color: var(--teal_hover);
+}
+
 
 .img1 {
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(321deg) brightness(0%) contrast(100%);
