@@ -50,7 +50,7 @@
 
             </div>
         </div>
-        
+
         <div class="swiper swiper-container w-100% d-block shadow p-3 mb-5 bg-body rounded">
             <h2 class="text-center fw-bold">Top 10 Bestsellers</h2>
             <div class="swiper-wrapper">
@@ -71,5 +71,52 @@
     </div>
 
 <?php require('inc/footer.php') ?>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            spaceBetween: 30,
+            effect: "fade",
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteration: false,
+            }
+        });
+
+        var swiper = new Swiper(".swiper-Reviews", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            slidesPerView: "3",
+            loop: true,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+    </script>
 </body>
 </html>
