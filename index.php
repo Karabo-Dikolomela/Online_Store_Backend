@@ -50,6 +50,24 @@
 
             </div>
         </div>
+        
+        <div class="swiper swiper-container w-100% d-block shadow p-3 mb-5 bg-body rounded">
+            <h2 class="text-center fw-bold">Top 10 Bestsellers</h2>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide shadow p-3 mb-5 bg-body rounded">
+                    <img src="./images/carousel/1.jpg" class="w-70% d-block">
+                </div>
+                <div class="swiper-slide shadow p-3 mb-5 bg-body rounded">
+                    <img src="./images/carousel/2.jpg" class="w-70% d-block">
+                </div>
+                <div class="swiper-slide shadow p-3 mb-5 bg-body rounded">
+                    <img src="./images/carousel/3.jpg" class="w-70% d-block">
+                </div>
+                <div class="swiper-slide shadow p-3 mb-5 bg-body rounded">
+                    <img src="./images/carousel/4.jpg" class="w-70% d-block">
+                </div>
+            </div>
+        </div>
     </div>
 
 <?php require('inc/footer.php') ?>
