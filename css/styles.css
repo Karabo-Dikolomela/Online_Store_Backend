@@ -3,7 +3,7 @@
     --teal_hover: #279e8c;
   }
 
-  * {
+* {
 
     font-family: 'Poppins', sans-serif;
 }
@@ -71,4 +71,10 @@ input::-webkit-inner-spin-button {
   
   .item:hover {
     background-color: gray;
+  }
+
+  .h-line {
+    width: 150px;
+    margin: 0 auto;
+    height: 1.7px;
   }

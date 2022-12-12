@@ -22,9 +22,9 @@ $bookData = $bookDAO->readAll();
 
 
 if (isset($_GET['payment'])) {
-        session_unset();
-        header("Location: ../index.php?payment=successful");
-    }
+    session_unset();
+    header("Location: ../index.php?payment=successful");
+}
 // purchase book
 if (isset($_POST['purchaseBook'])) {
 
@@ -44,7 +44,7 @@ if (isset($_POST['purchaseBook'])) {
         $_SESSION['outOfStock'] = true;
 
         //header("Location: ./../shop3.php?error=soldout");
-        header("Location: shop3.php?error=soldout");
+        header("Location: shop.php?error=soldout");
     }
 }
 
@@ -71,26 +71,23 @@ if (isset($_SESSION['outOfStock']) && $_SESSION['outOfStock'] == true) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHOP3</title>
     <?php
-    require_once("inc/links.php");
+    require_once('inc/links.php');
     require_once("inc/header.php");
     ?>
 </head>
 
 <body>
 
+    
 
-    <section>
-
-
-        <div class="items">
-            <?php
-            foreach ($bookData as $i => $book) {
-                echo "
-                        <div class='container'>
-                            <div class='row'>
+        <?php
+        foreach ($bookData as $i => $book) {
+            echo "
+                        <div class='container-fluid d-flex margin: auto;'>
+                            <div class='container'>
                                 <h3> Book No: " . ($i + 1) . " </h3>
-                                    <div class='col-lg-5 col-md-6 my-3'>
-                                            <div class='card border-0 shadow' style='max-width: 350px; margin: auto;'>
+                                    
+                                            <div class='card border-0 shadow ' style='max-width: 350px; margin: auto;'>
                                                 <img src='" . $_SESSION['selectedBook']->getFilepath() . "' alt='thumb' width=350 height=200 class='card-img-top'>
                                                     <div class='card-body'>
                                                         <h5>" . $book->getTitle() . "</h5>
@@ -100,29 +97,30 @@ if (isset($_SESSION['outOfStock']) && $_SESSION['outOfStock'] == true) {
                                                                 <span class='badge rounded-pill bg-light text-dark text-wrap'>
                                                                     <strong>" . $book->getGenre() . "</strong>
                                                                 </span>
-                                                                </span>" . $book->displayAvailibility() . 
-                                                                "</span>
+                                                                <span>" . $book->displayAvailibility() . "</span>
 
 
                                                             <form action='" . $_SERVER['PHP_SELF'] . "' method='post'>
                                                                 <input type='hidden' name='bookTitle' value='" . $_SESSION['selectedBook']->getTitle() . "'>
                                                                 <button type='submit' name='purchaseBook' value='true'  class='btn btn-sn text-white custom-bg shadow-none'>Purchase</button>
                                                             </form>
-                                                        </div
+                                                        </div>
                                                     </div>
                                             </div>
-                                    </div>
+                                    
                             </div>
                         </div>
                     ";
-            }
-            ?>
-        </div>
-    </section>
+        }
+        ?>
+    
 
-    <?php
-    require_once("inc/footer.php")
-    ?>
+    
+
+        <?php
+        require_once("inc/footer.php")
+        ?>
+    
 
 </body>
 

@@ -69,6 +69,7 @@
             </div>
         </div>
     </div>
+    
 
      <!-- Featured Books -->
      <h2 class="mt-5 pt-4 mb-4 text-center fw-bold">FEATURED</h2>
