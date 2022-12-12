@@ -9,7 +9,7 @@
     require('inc/links.php')
     ?>
 </head>
-<body>
+<body class="bg-light m-5">
     
 </body>
 </html>
