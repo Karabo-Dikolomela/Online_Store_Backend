@@ -23,6 +23,35 @@
         </h5>
     </div>
 
+    <!-- Carousel -->
+    <div class="container-fluid d-flex margin: auto;">
+
+        <div class="container-fluid">
+            <div>
+                <h2 class="text-center fw-bold">NEW ADDITION</h2>
+            </div>
+            <div class="d-flex flex-wrap mt-5">
+
+                <div class="col-md-5 mb-lg-0 mb-md-0 mb-3 m-4 pb-2 shadow p-3 mb-5 bg-body rounded">
+                    <img src="images/selfHelpBooks/a-self-help.jpg" class="w-90 d-block" padding="2em">
+                </div>
+
+                <div class="col-md-5 mb-lg-0 mb-md-0 mb-3 m-4 pb-2 shadow p-3 mb-5 bg-body rounded">
+                    <img src="images/selfHelpBooks/b-self-help.jpg" class="w-90 d-block" padding="2em">
+                </div>
+
+                <div class="col-md-5 mb-lg-0 mb-md-0 mb-3 m-4 pb-2 shadow p-3 mb-5 bg-body rounded">
+                    <img src="images/selfHelpBooks/g-self-help.jpg" class="w-90 d-block" padding="2em">
+                </div>
+
+                <div class="col-md-5 mb-lg-0 mb-md-0 mb-3 m-4 pb-2 shadow p-3 mb-5 bg-body rounded">
+                    <img src="images/selfHelpBooks/c-self-help.jpg" class="w-90 d-block" padding="2em">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 <?php require('inc/footer.php') ?>
 </body>
 </html>
