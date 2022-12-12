@@ -10,6 +10,8 @@
     ?>
 </head>
 <body class="bg-light m-5">
-    
+<?php require_once('inc/header.php') ?>
+
+<?php require('inc/footer.php') ?>
 </body>
 </html>
