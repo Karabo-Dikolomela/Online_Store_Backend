@@ -50,8 +50,8 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="bg-white rounded p-4 border-top border-4 text-center shadow box">
-                    <img src="images/about/hotel.png" width="70px">
-                    <h4 class="mt-3">100+ ROOMS</h4>
+                    <img src="images/about/books.jpg" width="70px">
+                    <h4 class="mt-3">50 000+ BOOKS</h4>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
