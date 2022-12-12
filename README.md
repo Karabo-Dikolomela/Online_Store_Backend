@@ -16,4 +16,4 @@ This project is a fullstack Online Store app created for the purpose of learning
 | Home Page | Display  | ![preview](https://github.com/Karabo-Dikolomela/Online_Store_Backend/blob/main/images/readme/hero.png) 
 | Browse | Scroll down to view more features | ![preview](https://github.com/Karabo-Dikolomela/Online_Store_Backend/blob/main/images/readme/newbestsellers.png) 
 | Browse | Scroll down to view more features | ![preview](https://github.com/Karabo-Dikolomela/Online_Store_Backend/blob/main/images/readme/reviews.png) ) |
-| | Browse | Scroll down to view more features | ![preview](https://github.com/Karabo-Dikolomela/Online_Store_Backend/blob/main/images/readme/reachUs.png)  
+| | Browse | Scroll down to view more features | ![preview](https://github.com/Karabo-Dikolomela/Online_Store_Backend/blob/main/images/readme/reachUs.png) |
