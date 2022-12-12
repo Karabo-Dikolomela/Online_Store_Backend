@@ -150,7 +150,7 @@
             </div>
             <div class="col-lg-4 col-md-6 my-3">
                 <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
-                    <img src="images/Self_Help_Books/i-self-help.jpg" class="card-img-top">
+                    <img src="images/selfHelpBooks/i-self-help.jpg" class="card-img-top">
                     <div class="card-body">
                         <h5>FALLING TOWARD THE MOON</h5>
                         <h6 class="mb-4">R200</h6>
