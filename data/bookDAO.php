@@ -40,7 +40,7 @@ class BookDAO {
         } else {
 
             die("Query failed: " . $conn->error); //die function to close connection in case of error
-            $conn->close();
+           // $conn->close();
 
         }
     }
@@ -70,7 +70,7 @@ class BookDAO {
         } else {
 
             die($conn->error . "<br><br>"); //die function to close connection in case of error
-            $conn->close(); // close connection
+            //$conn->close(); // close connection
             
         }
 
@@ -124,7 +124,7 @@ class BookDAO {
         } else {
 
             die($conn->error); //die function to close connection in case of error
-            $conn->close();
+            //$conn->close();
          
         }
     }
@@ -145,7 +145,7 @@ class BookDAO {
         } else {
 
             die($conn->error); //die function to close connection in case of error
-            $conn->close();
+            //$conn->close();
          
         }
     }

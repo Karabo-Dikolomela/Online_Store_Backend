@@ -88,7 +88,7 @@ if (isset($_SESSION['outOfStock']) && $_SESSION['outOfStock'] == true) {
                                 <h3> Book No: " . ($i + 1) . " </h3>
                                     
                                             <div class='card border-0 shadow ' style='max-width: 350px; margin: auto;'>
-                                                <img src='" . $_SESSION['selectedBook']->getFilepath() . "' alt='thumb' width=350 height=200 class='card-img-top'>
+                                                <img src='" . $book->getFilepath() . "' alt='thumb' width=350 height=200 class='card-img-top'>
                                                     <div class='card-body'>
                                                         <h5>" . $book->getTitle() . "</h5>
                                                         <h6  class='mb-4'>R" . $book->calcFullPrice() . "</h6>
@@ -101,7 +101,7 @@ if (isset($_SESSION['outOfStock']) && $_SESSION['outOfStock'] == true) {
 
 
                                                             <form action='" . $_SERVER['PHP_SELF'] . "' method='post'>
-                                                                <input type='hidden' name='bookTitle' value='" . $_SESSION['selectedBook']->getTitle() . "'>
+                                                                <input type='hidden' name='bookTitle' value='" . $book->getTitle() . "'>
                                                                 <button type='submit' name='purchaseBook' value='true'  class='btn btn-sn text-white custom-bg shadow-none'>Purchase</button>
                                                             </form>
                                                         </div>
