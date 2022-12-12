@@ -35,7 +35,7 @@
             <div class="col-lg-4 col-md-6 mb-5 px-5">
                 <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
                     <div class="d-flex-row align-items-center mb-2">
-                        <img src="images/Book/a.jpg " width="200px">
+                        <img src="images/book/a.jpg " width="200px">
                         <h6 class="mb-4">R200</h6>
                             <a href="#" class="btn btn-sn w-100 text-white custom-bg shadow-none mb-2">Add to Cart</a>
                             <a href="#" class="btn btn-sn w-100 btn-outline-dark shadow-none">More details</a>
@@ -46,7 +46,7 @@
             <div class="col-lg-4 col-md-6 mb-5 px-5">
                 <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
                     <div class="d-flex-row align-items-center mb-2">
-                        <img src="images/Book/b.jpg" width="200px">
+                        <img src="images/book/b.jpg" width="200px">
                         <h6 class="mb-4">R200</h6>
                             <a href="#" class="btn btn-sn w-100 text-white custom-bg shadow-none mb-2">Add to Cart</a>
                             <a href="#" class="btn btn-sn w-100 btn-outline-dark shadow-none">More details</a>
@@ -57,7 +57,7 @@
             <div class="col-lg-4 col-md-6 mb-5 px-5">
                 <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
                     <div class="d-flex-row align-items-center mb-2">
-                        <img src="images/Book/c.jpg " width="200px">
+                        <img src="images/book/c.jpg " width="200px">
                         <h6 class="mb-4">R200</h6>
                             <a href="#" class="btn btn-sn w-100 text-white custom-bg shadow-none mb-2">Add to Cart</a>
                             <a href="#" class="btn btn-sn w-100 btn-outline-dark shadow-none">More details</a>
@@ -68,7 +68,7 @@
             <div class="col-lg-4 col-md-6 mb-5 px-5">
                 <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
                     <div class="d-flex-row align-items-center mb-2">
-                        <img src="images/Book/d.jpg" width="200px">
+                        <img src="images/book/d.jpg" width="200px">
                         <h6 class="mb-4">R200</h6>
                             <a href="#" class="btn btn-sn w-100 text-white custom-bg shadow-none mb-2">Add to Cart</a>
                             <a href="#" class="btn btn-sn w-100 btn-outline-dark shadow-none">More details</a>
@@ -79,7 +79,7 @@
             <div class="col-lg-4 col-md-6 mb-5 px-5">
                 <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
                     <div class="d-flex-row align-items-center mb-2">
-                        <img src="images/Book/e.jpg" width="200px">
+                        <img src="images/book/e.jpg" width="200px">
                         <h6 class="mb-4">R200</h6>
                             <a href="#" class="btn btn-sn w-100 text-white custom-bg shadow-none mb-2">Add to Cart</a>
                             <a href="#" class="btn btn-sn w-100 btn-outline-dark shadow-none">More details</a>
@@ -90,7 +90,7 @@
             <div class="col-lg-4 col-md-6 mb-5 px-5">
                 <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
                     <div class="d-flex-column align-items-center mb-2">
-                        <img src="images/Book/f.jpg" width="200px">
+                        <img src="images/book/f.jpg" width="200px">
                         <h6 class="mb-4">R200</h6>
                             <a href="#" class="btn btn-sn w-100 text-white custom-bg shadow-none mb-2">Add to Cart</a>
                             <a href="#" class="btn btn-sn w-100 btn-outline-dark shadow-none">More details</a>
