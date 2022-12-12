@@ -9,7 +9,7 @@
     <?php require_once('inc/links.php') ?>
 </head>
 
-<body>
+<body class="bg-light">
 <?php require_once('inc/header.php') ?>
 
 <?php require('inc/footer.php') ?>
