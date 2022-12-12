@@ -1,6 +1,10 @@
 <nav class="navbar navbar-expand-lg bg-light px-lg-3 py-lg-2 shadow-sm sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand me-5 fw-bold fs-3" href="index.php">K-BOOKS</a>
+
+        <a class="navbar-brand me-5 fw-bold fs-3" href="index.php">
+        <img class="navbar-brand w-0 d-flex center" src="images/logo/logo.jpg" width="70" height="64" alt="logo">
+        </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

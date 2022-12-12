@@ -71,7 +71,7 @@ if (isset($_SESSION['outOfStock']) && $_SESSION['outOfStock'] == true) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHOP3</title>
     <?php
-    require_once('inc/links.php');
+    require_once("inc/links.php");
     require_once("inc/header.php");
     ?>
 </head>

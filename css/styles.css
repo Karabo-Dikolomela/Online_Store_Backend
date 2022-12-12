@@ -52,3 +52,23 @@ input::-webkit-inner-spin-button {
     display: block;
     width: 100%;
   }
+
+  .item {
+    order: 4 !important;
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .item {
+    margin: 5px;
+    padding: 25px;
+    background-color: rgb(214, 214, 214);
+    color: white
+  
+  }
+  
+  .item:hover {
+    background-color: gray;
+  }
