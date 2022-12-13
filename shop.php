@@ -21,34 +21,6 @@ $bookDAO = new BookDAO($databaseConfig);
 $bookData = $bookDAO->readAll();
 
 
-if (isset($_GET['payment'])) {
-    session_unset();
-    header("Location: ../index.php?payment=successful");
-}
-// purchase book
-if (isset($_POST['purchaseBook'])) {
-
-    // save result of sellBook() method
-    $result = $_SESSION['selectedBook']->sellBook();
-
-    if ($result) {
-
-        // redirect to success page if book is sold successfully
-        header("Location: /views/success.php");
-    } else {
-
-        // send an http header that redirects to shop.php and sets a GET variable called error with a value of 'soldout'
-
-        // Cookies or a session variable can also be used if this doesn't make sense
-
-        $_SESSION['outOfStock'] = true;
-
-        //header("Location: ./../shop3.php?error=soldout");
-        header("Location: shop.php?error=soldout");
-    }
-}
-
-
 // outOfStock request handler
 if (isset($_SESSION['outOfStock']) && $_SESSION['outOfStock'] == true) {
 
@@ -100,9 +72,9 @@ if (isset($_SESSION['outOfStock']) && $_SESSION['outOfStock'] == true) {
                                                                 <span>" . $book->displayAvailibility() . "</span>
 
 
-                                                            <form action='" . $_SERVER['PHP_SELF'] . "' method='post'>
-                                                                <input type='hidden' name='bookTitle' value='" . $book->getTitle() . "'>
-                                                                <button type='submit' name='purchaseBook' value='true'  class='btn btn-sn text-white custom-bg shadow-none'>Purchase</button>
+                                                            <form action='./view/viewDetails.php' method='get'>
+                                                                <input type='hidden' name='bookId' value='" . $book->getId() . "'>
+                                                                <button type='submit' name='viewDetails' value='true'  class='btn btn-sn text-white custom-bg shadow-none'>More Details</button>
                                                             </form>
                                                         </div>
                                                     </div>

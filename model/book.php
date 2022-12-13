@@ -158,13 +158,6 @@ class Book
         return $this;
     }
 
-    function addToTotal() {
-    
-        $_SESSION['selectedItemValue'] = $this->getPrice();
-        $selectedBook = $_SESSION['selectedBook'];
-        
-    }
-
    }
 
 
