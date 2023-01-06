@@ -16,11 +16,9 @@
     <div class="my-5 px-4">
         <h2 class="fw-bold text-center">CONTACT US</h2>
         <div class="h-line bg-dark"></div>
-        <p class="text-center mt-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Nostrum provident rem id quasi quis est nisi quidem totam
-            saepe magni culpa tenetur tempora modi quos nobis distinctio libero, quam facere.
-        </p>
+        <h5 class="text-center mt-3">
+        We would love to hear from you!.
+</h5>
     </div>
 
     <div class="container">

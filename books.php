@@ -24,9 +24,7 @@
         <h2 class="fw-bold text-center">BOOKS</h2>
         <div class="h-line bg-dark"></div>
         <p class="text-center mt-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Nostrum provident rem id quasi quis est nisi quidem totam
-            saepe magni culpa tenetur tempora mzodi quos nobis distinctio libero, quam facere.
+            Browse through our book gallery for your little ones
         </p>
     </div>
 
@@ -35,10 +33,8 @@
             <div class="col-lg-4 col-md-6 mb-5 px-5">
                 <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
                     <div class="d-flex-row align-items-center mb-2">
-                        <img src="images/book/a.jpg " width="200px">
-                        <h6 class="mb-4">R200</h6>
-                            <a href="#" class="btn btn-sn w-100 text-white custom-bg shadow-none mb-2">Add to Cart</a>
-                            <a href="#" class="btn btn-sn w-100 btn-outline-dark shadow-none">More details</a>
+                        <img src="./static/images/childrens/a-childrens.jpeg" width="200px">
+                        <h6 class="mb-4">Planting For Honeybees</h6>
                         <h5 class="mb-0 ms-0"></h5>
                     </div>
                 </div>
@@ -46,10 +42,8 @@
             <div class="col-lg-4 col-md-6 mb-5 px-5">
                 <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
                     <div class="d-flex-row align-items-center mb-2">
-                        <img src="images/book/b.jpg" width="200px">
-                        <h6 class="mb-4">R200</h6>
-                            <a href="#" class="btn btn-sn w-100 text-white custom-bg shadow-none mb-2">Add to Cart</a>
-                            <a href="#" class="btn btn-sn w-100 btn-outline-dark shadow-none">More details</a>
+                        <img src="static/images/childrens/g-childrens.jpg" width="200px">
+                        <h6 class="mb-4">The New Farm</h6>
                         <h5 class="mb-0 ms-0"></h5>
                     </div>
                 </div>
@@ -57,10 +51,8 @@
             <div class="col-lg-4 col-md-6 mb-5 px-5">
                 <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
                     <div class="d-flex-row align-items-center mb-2">
-                        <img src="images/book/c.jpg " width="200px">
-                        <h6 class="mb-4">R200</h6>
-                            <a href="#" class="btn btn-sn w-100 text-white custom-bg shadow-none mb-2">Add to Cart</a>
-                            <a href="#" class="btn btn-sn w-100 btn-outline-dark shadow-none">More details</a>
+                        <img src="static/images/childrens/c-childrens.jpg" width="200px">
+                        <h6 class="mb-4">A Very Fine House</h6>
                         <h5 class="mb-0 ms-0"></h5>
                     </div>
                 </div>
@@ -68,10 +60,8 @@
             <div class="col-lg-4 col-md-6 mb-5 px-5">
                 <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
                     <div class="d-flex-row align-items-center mb-2">
-                        <img src="images/book/d.jpg" width="200px">
-                        <h6 class="mb-4">R200</h6>
-                            <a href="#" class="btn btn-sn w-100 text-white custom-bg shadow-none mb-2">Add to Cart</a>
-                            <a href="#" class="btn btn-sn w-100 btn-outline-dark shadow-none">More details</a>
+                        <img src="static/images/childrens/d-childrens.jpg" width="200px">
+                        <h6 class="mb-4">The Tree Keepers</h6>
                         <h5 class="mb-0 ms-0"></h5>
                     </div>
                 </div>
@@ -79,10 +69,8 @@
             <div class="col-lg-4 col-md-6 mb-5 px-5">
                 <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
                     <div class="d-flex-row align-items-center mb-2">
-                        <img src="images/book/e.jpg" width="200px">
-                        <h6 class="mb-4">R200</h6>
-                            <a href="#" class="btn btn-sn w-100 text-white custom-bg shadow-none mb-2">Add to Cart</a>
-                            <a href="#" class="btn btn-sn w-100 btn-outline-dark shadow-none">More details</a>
+                        <img src="static/images/childrens/e-childrens.jpg" width="200px">
+                        <h6 class="mb-4">NESTiG</h6>
                         <h5 class="mb-0 ms-0"></h5>
                     </div>
                 </div>
@@ -90,10 +78,8 @@
             <div class="col-lg-4 col-md-6 mb-5 px-5">
                 <div class="bg-white rounded shadow p-4 border-top border-4 border-dark pop">
                     <div class="d-flex-column align-items-center mb-2">
-                        <img src="images/book/f.jpg" width="200px">
-                        <h6 class="mb-4">R200</h6>
-                            <a href="#" class="btn btn-sn w-100 text-white custom-bg shadow-none mb-2">Add to Cart</a>
-                            <a href="#" class="btn btn-sn w-100 btn-outline-dark shadow-none">More details</a>
+                        <img src="static/images/childrens/f-childrens.jpg" width="200px">
+                        <h6 class="mb-4">A World Full Of Animal Stories</h6>
                         <h5 class="mb-0 ms-0"></h5>
                     </div>
                 </div>

@@ -1,163 +1,171 @@
 <?php
 
-class Book
-{
-    //===============================fields=====================================//
+include __DIR__ . "/../data/bookDAO.php";
+
+class Book {
+
+    // ========================= FIELDS =========================
+
     private $id;
     private $title;
     private $genre;
+    private $stock;
     private $price;
-    private $filepath;
-    private $available = 1;
+    private $image;
 
-    public function __construct($title, $genre, $price, $filepath)
-    {
+    private $add_date;
+    
 
-        $this->title = $title;
-        $this->genre = $genre;
-        $this->price = $price;
-        $this->filepath = $filepath;
-    }
 
-    //===================================methods====================================
+    public function __construct($id){
 
-    public static function createBookFromDb($row) {
+        // Call to DAO
+        $book = BookDAO::fetchBook($id);
 
-        $book = new Book($row->title, $row->genre, $row->price, $row->filepath);
-        $book->setId($row->id);
-        $book->setAvailable($row->available);
-
-        return $book;
-    }
-
-    public function sellBook()
-    {
-        if ($this->available) {
-
-            $this->available = 0;
-            return true;
-
-        } else {
-            return false;
+        if ($book) {
+            $this->id = $book['id'];
         }
-    }
-
-     // multiplies price property of instance and returns full price of the book
-     public function calcFullPrice() {
-        return $this->price * 1;
-    }
-
-    public function displayAvailibility() {
-        if ( $this->available == 1 ) {
-            return "<li style='color:green;'>In Stock</li>";
-        }else if ( $this->available == 0) {
-            return "<li style='color:red;'Out of Stock</li>";
+        ;
+        if ($book) {
+            $this->title = $book['title'];
         }
+        ;
+        if ($book) {
+            $this->genre = $book['genre'];
+        }
+        ;
+        if ($book) {
+            $this->stock = $book['stock'];
+        }
+        ;
+        if ($book) {
+            $this->price = $book['price'];
+        }
+        ;
+        if ($book) {
+            $this->image = $book['image'];
+        }
+        ;
     }
 
-    //==================================Getters and Setters ===============================
+    // ========================= METHODS =========================
 
-    public function getTitle()
-    {
-        return $this->title;
-    }
-    public function setTitle($title)
-    {
-        $this->title = $title;
-
-        return $this;
+    public static function getAllBooks() {
+        return BookDAO::fetchAllBooks();
     }
 
+    public static function filter() {
 
-    public function getGenre()
-    {
-        return $this->genre;
-    }
-    public function setGenre($genre)
-    {
-        $this->genre = $genre;
+        $book = BookDAO::fetchAllBooks();
+        $filteredBooks = [];
 
-        return $this;
-    }
+        foreach ($book as $id) {
+            $book = new Book($id['id']);
 
+            if (isset($_POST['Children'])) {
+                if ($book->getGenre() == true) {
+                    array_push($filteredBooks, $id);
+                }
 
-    public function getFilepath()
-    {
-        return $this->filepath;
-    }
-    public function setFilepath($filepath)
-    {
-        $this->filepath = $filepath;
+            } elseif (isset($_POST['Self Help'])) {
+                if ($book->getGenre()() == true) {
+                    array_push($filteredBooks, $id);
+                }
 
-        return $this;
-    }
+            } elseif (isset($_POST['Fiction'])) {
+                if ($book->getGenre()() == true) {
+                    array_push($filteredBooks, $id);
+            }
 
+            } else {
+                return [];
+            }   
+        }
+        return $filteredBooks;
 
-    /**
-     * Get the value of price
-     * 
-     * @return self
-     */
-    public function getPrice()
-    {
-        return $this->price;
     }
 
-
-    /**
-     * Set the value of price
-     *
-     * @return  self
-     */ 
-    public function setPrice($price)
-    {
-        $this->price = $price;
-
-        return $this;
+    public static function displayFeatured() {
+        return BookDAO::featuredBooks();
     }
 
-   
-    /**
-     * Get the value of available
-     */ 
-    public function getAvailable()
-    {
-        return $this->available;
-    }
+    // public static function displayLatest() {
+    //     return BookDAO::latestAdditions();
+    // }
 
-    /**
-     * Set the value of available
-     *
-     * @return  self
-     */ 
-    public function setAvailable($available)
-    {
-        $this->available = $available;
 
-        return $this;
-    }
+    // ==================== GETTERS & SETTERS ====================
 
-      /**
-     * Get the value of id
-     */ 
-    public function getId()
-    {
+    public function getId() {
         return $this->id;
     }
 
-
-     /**
-     * Set the value of id
-     *
-     * @return  self
-     */ 
-    public function setId($id)
-    {
+    public function setId($id) {
         $this->id = $id;
 
         return $this;
     }
 
-   }
+    public function getTitle() {
+        return $this->title;
+    }
+
+    public function setTitle($title) {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    public function getImage() {
+        return $this->image;
+    }
+
+    public function setImage($image) {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    public function getPrice() {
+        return $this->price;
+    }
+
+    public function setPrice($price) {
+        $this->price = $price;
+
+        return $this;
+    }
+
+    public function getGenre() {
+        return $this->genre;
+    }
+
+    public function setGenre($genre) {
+        $this->genre = $genre;
+
+        return $this;
+    }
+
+    public function getStock() {
+        return $this->stock;
+    }
+
+    public function setStock($stock) {
+        $this->stock = $stock;
+
+        return $this;
+    }
+ 
+    public function getAdd_date() {
+        return $this->add_date;
+    }
+
+    public function setAdd_date($add_date) {
+        $this->add_date = $add_date;
+
+        return $this;
+    }
+    
+}
 
 

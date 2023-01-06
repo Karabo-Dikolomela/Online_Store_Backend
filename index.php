@@ -1,17 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K-BOOKS - HOME</title>
     <?php require_once('./inc/links.php')?>
+    <?php include __DIR__ . "/model/book.php";?>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>
 
@@ -24,7 +24,7 @@ ini_set('display_errors', 'On');
 
     <!--hero-->
     <div class="mb-5" style="
-    background-image: url('./images/banner/hero-banner.jpg');
+    background-image: url('./static/images/banner/hero-banner.jpg');
     height: 30vh;
   ">
         <h5 class="text-white text-center shadow-1-strong p-5 text-center">"To know that we know what we know, and to know that we do not know what we do not know, that is true knowledge."
@@ -43,19 +43,19 @@ ini_set('display_errors', 'On');
             <div class="d-flex flex-wrap mt-5">
 
                 <div class="col-md-5 mb-lg-0 mb-md-0 mb-3 m-4 pb-2 shadow p-3 mb-5 bg-body rounded">
-                    <img src="images/selfHelpBooks/a-self-help.jpg" class="w-90 d-block" padding="2em">
+                    <img src="./static/images/selfHelpBooks/a-self-help.jpg" class="w-90 d-block" padding="2em">
                 </div>
 
                 <div class="col-md-5 mb-lg-0 mb-md-0 mb-3 m-4 pb-2 shadow p-3 mb-5 bg-body rounded">
-                    <img src="images/selfHelpBooks/b-self-help.jpg" class="w-90 d-block" padding="2em">
+                    <img src="./static/images/selfHelpBooks/b-self-help.jpg" class="w-90 d-block" padding="2em">
                 </div>
 
                 <div class="col-md-5 mb-lg-0 mb-md-0 mb-3 m-4 pb-2 shadow p-3 mb-5 bg-body rounded">
-                    <img src="images/selfHelpBooks/g-self-help.jpg" class="w-90 d-block" padding="2em">
+                    <img src="./static/images/selfHelpBooks/g-self-help.jpg" class="w-90 d-block" padding="2em">
                 </div>
 
                 <div class="col-md-5 mb-lg-0 mb-md-0 mb-3 m-4 pb-2 shadow p-3 mb-5 bg-body rounded">
-                    <img src="images/selfHelpBooks/c-self-help.jpg" class="w-90 d-block" padding="2em">
+                    <img src="./static/images/selfHelpBooks/c-self-help.jpg" class="w-90 d-block" padding="2em">
                 </div>
 
             </div>
@@ -65,16 +65,16 @@ ini_set('display_errors', 'On');
             <h2 class="text-center fw-bold">Top 10 Bestsellers</h2>
             <div class="swiper-wrapper">
                 <div class="swiper-slide shadow p-3 mb-5 bg-body rounded">
-                    <img src="./images/carousel/1.jpg" class="w-70% d-block">
+                    <img src="./static/images/carousel/1.jpg" class="w-70% d-block">
                 </div>
                 <div class="swiper-slide shadow p-3 mb-5 bg-body rounded">
-                    <img src="./images/carousel/2.jpg" class="w-70% d-block">
+                    <img src="./static/images/carousel/2.jpg" class="w-70% d-block">
                 </div>
                 <div class="swiper-slide shadow p-3 mb-5 bg-body rounded">
-                    <img src="./images/carousel/3.jpg" class="w-70% d-block">
+                    <img src="./static/images/carousel/3.jpg" class="w-70% d-block">
                 </div>
                 <div class="swiper-slide shadow p-3 mb-5 bg-body rounded">
-                    <img src="./images/carousel/4.jpg" class="w-70% d-block">
+                    <img src="./static/images/carousel/4.jpg" class="w-70% d-block">
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@ ini_set('display_errors', 'On');
         <div class="row">
             <div class="col-lg-4 col-md-6 my-3">
                 <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
-                    <img src="./images/fiction/2.jpg" class="">
+                    <img src="./static/images/fiction/2.jpg" class="">
                     <div class="card-body">
                         <h5>YOUR SOUL IS A RIVER</h5>
                         <h6 class="mb-4">R200</h6>
@@ -126,7 +126,7 @@ ini_set('display_errors', 'On');
             </div>
             <div class="col-lg-4 col-md-6 my-3">
                 <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
-                    <img src="./images/fiction/1.jpg" class="card-img-top">
+                    <img src="./static/images/fiction/1.jpg" class="card-img-top">
                     <div class="card-body">
                         <h5>CEREAL</h5>
                         <h6 class="mb-4">R200</h6>
@@ -163,7 +163,7 @@ ini_set('display_errors', 'On');
             </div>
             <div class="col-lg-4 col-md-6 my-3">
                 <div class="card border-0 shadow" style="max-width: 350px; margin: auto;">
-                    <img src="images/selfHelpBooks/i-self-help.jpg" class="card-img-top">
+                    <img src="./static/images/selfHelpBooks/i-self-help.jpg" class="card-img-top">
                     <div class="card-body">
                         <h5>FALLING TOWARD THE MOON</h5>
                         <h6 class="mb-4">R200</h6>
@@ -199,7 +199,7 @@ ini_set('display_errors', 'On');
             </div>
 
             <div class="col-lg-12 text-center mt-5">
-                <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">More Books >>></a>
+                <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">Click On shop page to shop >>></a>
             </div>
         </div>
     </div>
@@ -215,13 +215,10 @@ ini_set('display_errors', 'On');
             <div class="swiper-wrapper mb-5">
                 <div class="swiper-slide bg-white p-4 shadow">
                     <div class="profile d-flex-row align-items-center mg-3">
-                        <img src="images/features/user.png" width="200px">
-                        <h6 class="m-0 ms-2">Random User</h6>
+                        <img src="./static/images/features/user.png" width="200px">
+                        <h6 class="m-0 ms-2">Illumination Nthikeng Mohlele Pan Macmillan SA,</h6>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Repellendus voluptas alias ipsa animi, quibusdam delectus vero
-                            earum nam architecto libero, consectetur id aliquam, ducimus
-                            laboriosam voluptatum aspernatur ullam commodi illo.
+                            February 2019 Online Price: R277       The best thing about this book is that the author pays homage to both contemporary and old school musicians, particularly in the jazz genre in a manner that immortalises their contribution to the art fraternity.
                         </p>
                         <div class="rating">
                             <i class="bi bi-star-fill text-warning"></i>
@@ -234,13 +231,11 @@ ini_set('display_errors', 'On');
                 </div>
                 <div class="swiper-slide bg-white p-4 shadow">
                     <div class="profile d-flex-row align-items-center mg-3">
-                        <img src="images/features/user.png" width="200px">
-                        <h6 class="m-0 ms-2">Random User</h6>
+                        <img src="./static/images/features/user.png" width="200px">
+                        <h6 class="m-0 ms-2">Thirteen Cents Kr</h6>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Repellendus voluptas alias ipsa animi, quibusdam delectus vero
-                            earum nam architecto libero, consectetur id aliquam, ducimus
-                            laboriosam voluptatum aspernatur ullam commodi illo.
+                          
+                            Sello Duiker Kwela Books, July 2013 Online Price: R236       In the novel Thirteen Cents Duiker paints a vivid and heart wrenching picture of how, in post-apartheid South Africa, overt and covert marginalization still prevail. Racism, tribalism, exploitation, classism, corruption, crime, violence, violation, starvation, and displacemen
                         </p>
                         <div class="rating">
                             <i class="bi bi-star-fill text-warning"></i>
@@ -253,13 +248,10 @@ ini_set('display_errors', 'On');
                 </div>
                 <div class="swiper-slide bg-white p-4 shadow">
                     <div class="profile d-flex-row align-items-center mg-3">
-                        <img src="images/features/user.png" width="200px">
-                        <h6 class="m-0 ms-2">Random User</h6>
+                        <img src="./static/images/features/user.png" width="200px">
+                        <h6 class="m-0 ms-2">Mongane Wally Serote Jacana Media</h6>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Repellendus voluptas alias ipsa animi, quibusdam delectus vero
-                            earum nam architecto libero, consectetur id aliquam, ducimus
-                            laboriosam voluptatum aspernatur ullam commodi illo.
+                        Rumours. April 2013 Online Price: R226       Mongane Wally Serote’s Rumours explores a man’s journey to dig deep into himself in an effort to discover what it is that he already knows, but had somehow forgotten along the way. Serote uses South Africa’s post-apartheid
                         </p>
                         <div class="rating">
                             <i class="bi bi-star-fill text-warning"></i>

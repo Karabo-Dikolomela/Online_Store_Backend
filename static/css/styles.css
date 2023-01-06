@@ -3,21 +3,58 @@
     --teal_hover: #279e8c;
   }
 
-* {
-
+  * {
+    margin: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+/* * {
+
+    font-family: 'Poppins', sans-serif;
+} */
 
 .h-font {
     font-family: 'Merienda', cursive;
 }
 
+body {
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 20px;
+  min-height: 100vh;
+}
+
+.product-image {
+  object-fit: cover;
+}
+
+.card-size {
+  width: 85%;
+  height: 30%;
+
+}
+
+.bookGenre {
+  font-size: 14px;
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 3px 8px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 16px;
+  margin: 0;
+  margin-left: 6px;
+}
+
 /* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
+/* input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-}
+} */
 
 .custom-bg {
     background-color: var(--teal);

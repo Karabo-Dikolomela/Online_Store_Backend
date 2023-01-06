@@ -23,25 +23,20 @@
         <h2 class="fw-bold text-center">ABOUT US</h2>
         <div class="h-line bg-dark"></div>
         <p class="text-center mt-3">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Nostrum provident rem id quasi quis est nisi quidem totam
-            saepe magni culpa tenetur tempora modi quos nobis distinctio libero, quam facere.
+        KBooks has long been devoted to delivering on four unique and particular strengths: <u>range</u>, <u>convenience</u>, <u>service</u> and <u>value</u>.
         </p>
     </div>
 
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-lg-6 col-mb-4 mb-4 order-lg-1 order-md-1 order-2">
-                <h3 class="mb-3">Lorem ipsum dolor </h3>
+                <h3 class="mb-3">Our Mission </h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Porro sunt minima ipsam illo ad sapiente provident atque.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Porro sunt minima ipsam illo ad sapiente provident atque.
+                In championing convenience, we do everything we can to encourage a stress free and rewarding shopping experience. Via careful use of eye-catching displays and intuitive layouts, and by locating bestsellers and sought-after titles near the entrance, we ensure that your visit to our store can be as quick and easy as you want it to be. And you’ll never have trouble spotting a bookseller if you have a question that you’d like answered quickly. We remain sensitive to the fact that lengthy shop visits can be disconcerting due to Covid-19, so we are conscientious about facilitating simple, safe book shopping.
                 </p>
             </div>
             <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-md-1 order-1">
-                <img src="images/about/about.png" class="w-100">
+                <img src="static/images/about/about.png" class="w-100">
             </div>
         </div>
     </div>
@@ -50,25 +45,25 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="bg-white rounded p-4 border-top border-4 text-center shadow box">
-                    <img src="images/about/books.jpg" width="70px">
+                    <img src="static/images/about/books.jpg" width="70px">
                     <h4 class="mt-3">50 000+ BOOKS</h4>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="bg-white rounded p-4 border-top border-4 text-center shadow box">
-                    <img src="images/about/customer.png" width="185px">
+                    <img src="static/images/about/customer.png" width="185px">
                     <h4 class="mt-3">200+ CUSTOMERS</h4>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="bg-white rounded p-4 border-top border-4 text-center shadow box">
-                    <img src="images/about/reviews.png" width="115px">
+                    <img src="static/images/about/reviews.png" width="115px">
                     <h4 class="mt-3">150+ Reviews</h4>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="bg-white rounded p-4 border-top border-4 text-center shadow box">
-                    <img src="images/about/staff.png" width="117px">
+                    <img src="static/images/about/staff.png" width="117px">
                     <h4 class="mt-3">200+ STAFF</h4>
                 </div>
             </div>
@@ -81,28 +76,28 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper mb-5">
                 <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-                    <img src="images/about/team.jpg" class="w-100">
-                    <h5 class="mt-2">Name</h5>
+                    <img src="static/images/about/team.jpg" class="w-100">
+                    <h5 class="mt-2">Mr P.Sololo</h5>
                 </div>
                 <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-                    <img src="images/about/team.jpg" class="w-100">
-                    <h5 class="mt-2">Name</h5>
+                    <img src="static/images/about/team.jpg" class="w-100">
+                    <h5 class="mt-2">Mr T. Dikolomela</h5>
                 </div>
                 <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-                    <img src="images/about/team.jpg" class="w-100">
-                    <h5 class="mt-2">Name</h5>
+                    <img src="static/images/about/team.jpg" class="w-100">
+                    <h5 class="mt-2">Ms T. Marais</h5>
                 </div>
                 <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-                    <img src="images/about/team.jpg" class="w-100">
-                    <h5 class="mt-2">Name</h5>
+                    <img src="static/images/about/team.jpg" class="w-100">
+                    <h5 class="mt-2">Ms O. Phihlela</h5>
                 </div>
                 <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-                    <img src="images/about/team.jpg" class="w-100">
-                    <h5 class="mt-2">Name</h5>
+                    <img src="static/images/about/team.jpg" class="w-100">
+                    <h5 class="mt-2">Mr R. Mtshweni</h5>
                 </div>
                 <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-                    <img src="images/about/team.jpg" class="w-100">
-                    <h5 class="mt-2">Name</h5>
+                    <img src="static/images/about/team.jpg" class="w-100">
+                    <h5 class="mt-2">Mr T. Taute</h5>
                 </div>
                 
             </div>

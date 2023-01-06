@@ -3,14 +3,16 @@
 <div class="row">
     <div class="col-lg-4">
 
-
+<h3>For general enquiries:</h3>
         <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Quo illo dolores quisquam rerum numquam suscipit accusamus vitae eveniet explicabo,
-            ad enim eligendi tempora unde aspernatur ea similique omnis dicta a?
+        KBooks Head Office
+        Physical Address:  6 Beach Rd, Woodstock | 8000| Cape Town | South Africa
+        Postal Address: PO Box 36023 | Cape Town | South Africa
+        Phone: +27678546921
+        Contact Hours: 8am-5:00pm Monday-Thursday; 8am-3:30pm Friday
         </p>
 
-        <img class="navbar-brand w-0" src="images/logo/logo.jpg" width="150" height="104" alt="logo">
+        <img class="navbar-brand w-0" src="static/images/logo/logo.jpg" width="150" height="104" alt="logo">
     </div>
     <div class="col-lg-4 p-4">
         <h5 class="mb-3">Links</h5>
