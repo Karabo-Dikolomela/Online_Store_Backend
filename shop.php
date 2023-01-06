@@ -3,7 +3,6 @@
 
 <?php
 include __DIR__ . "/inc/header.php";
-
 include __DIR__ . "/model/book.php";
 
 if (isset($_POST['Children']) || isset($_POST['Self_Help']) || isset($_POST['Fiction'])) {
