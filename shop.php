@@ -6,7 +6,7 @@ include __DIR__ . "/inc/header.php";
 
 include __DIR__ . "/model/book.php";
 
-if (isset($_POST['Children']) || isset($_POST['Self Help']) || isset($_POST['fiction'])) {
+if (isset($_POST['Children']) || isset($_POST['Self_Help']) || isset($_POST['Fiction'])) {
     $bookID = Book::filter();
 } else {
     $bookID = Book::getAllBooks();
@@ -23,7 +23,7 @@ if (isset($_POST['Children']) || isset($_POST['Self Help']) || isset($_POST['fic
             <form action="./shop.php" method="post">
                 <div class="input-group mb-3">
                     <button class="btn btn-outline-dark" type="submit" name="Children" value="Children">Children</button>
-                    <button class="btn btn-outline-dark" type="submit" name="Self_Help" value="Self_help">Self Help</button>
+                    <button class="btn btn-outline-dark" type="submit" name="Self_Help" value="Self_Help">Self Help</button>
                     <button class="btn btn-outline-dark" type="submit" name="Fiction" value="Fiction">Fiction</button>
                 </div>
             </form>
@@ -39,7 +39,7 @@ if (isset($_POST['Children']) || isset($_POST['Self Help']) || isset($_POST['fic
 
                     <div class="col-md-3 d-flex justify-content-center">
                         <div class="card border-0 shadow">
-                            <img src="./static/images/childrens/<?= $book->getImage() ?>" class="card-img-top book-image" alt="<?= $book->getTitle() ?>">
+                            <img src="./static/images/books/<?= $book->getImage() ?>" class="card-img-top book-image" alt="<?= $book->getTitle() ?>">
                             <div class="card-body">
                                 <div class="text-center">
                                     <h5 class="card-title text-center"><?= $book->getTitle() ?> </h5>

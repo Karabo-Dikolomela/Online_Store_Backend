@@ -11,6 +11,9 @@ class Book {
     private $genre;
     private $stock;
     private $price;
+    private $is_children;
+    private $is_fiction;
+    private $is_self_help;
     private $image;
 
     private $add_date;
@@ -32,6 +35,18 @@ class Book {
         ;
         if ($book) {
             $this->genre = $book['genre'];
+        }
+        ;
+        if ($book) {
+            $this->is_children = $book['is_children'];
+        }
+        ;
+        if ($book) {
+            $this->is_fiction = $book['is_fiction'];
+        }
+        ;
+        if ($book) {
+            $this->is_self_help = $book['is_self_help'];
         }
         ;
         if ($book) {
@@ -63,17 +78,17 @@ class Book {
             $book = new Book($id['id']);
 
             if (isset($_POST['Children'])) {
-                if ($book->getGenre() == true) {
+                if ($book->getIs_children() == true) {
                     array_push($filteredBooks, $id);
                 }
 
-            } elseif (isset($_POST['Self Help'])) {
-                if ($book->getGenre()() == true) {
+            } elseif (isset($_POST['Self_Help'])) {
+                if ($book->getIs_self_help() == true) {
                     array_push($filteredBooks, $id);
                 }
 
             } elseif (isset($_POST['Fiction'])) {
-                if ($book->getGenre()() == true) {
+                if ($book->getIs_fiction() == true) {
                     array_push($filteredBooks, $id);
             }
 
@@ -142,6 +157,36 @@ class Book {
 
     public function setGenre($genre) {
         $this->genre = $genre;
+
+        return $this;
+    }
+
+    public function getIs_children() {
+        return $this->is_children;
+    }
+
+    public function setIs_pc($is_children) {
+        $this->is_children = $is_children;
+
+        return $this;
+    }
+
+    public function getIs_fiction() {
+        return $this->is_fiction;
+    }
+
+    public function setIs_fiction($is_fiction) {
+        $this->is_fiction = $is_fiction;
+
+        return $this;
+    }
+
+    public function getIs_self_help() {
+        return $this->is_self_help;
+    }
+
+    public function setIs_self_help($is_self_help) {
+        $this->is_self_help = $is_self_help;
 
         return $this;
     }
