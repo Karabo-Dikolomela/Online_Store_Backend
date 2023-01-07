@@ -41,9 +41,11 @@ include __DIR__ . "/model/order.php";
                             <?php $cart_total = $cart_total + $item->getPrice(); ?>
                             <tr>
                                 <td><?= $item->getTitle() ?></td>
-                                <td><?php if($item->getTitle()) {
+                                <td><?php if($item->getIs_self_help()) {
+                                    echo "Self-Help";
+                                } elseif($item->getIs_children()) {
                                     echo "Children";
-                                } else {
+                                } else{
                                     echo "Fiction";
                                 }
                                 ?>
