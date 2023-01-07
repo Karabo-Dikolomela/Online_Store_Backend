@@ -84,8 +84,14 @@ if (isset($_POST['Children']) || isset($_POST['Self_Help']) || isset($_POST['Fic
                                         <p class="bookGenre"><?= $book->getGenre() ?></p>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
+                                    <div class="modal-body">
+                                        <div>
+                                            <!-- Hidden field for bookID -->
+                                            <input type="hidden" name="bookId" value="<?= $book->getId() ?>">
+                                        </div>
+                                    </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Nah, lemme see others...</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Browse for more</button>
                                         <?php if (isset($_SESSION['Cart']) === true) : ?>
                                             <?php if (in_array($book->getId(), $_SESSION['Cart'])) : ?>
                                                 <button type="submit" name="Submit" class="btn btn-primary" disabled><i>Already in!</i></button>
