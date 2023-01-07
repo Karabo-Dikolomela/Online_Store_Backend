@@ -10,7 +10,6 @@ ini_set('display_errors', 'On');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K-BOOKS - HOME</title>
-    <?php require_once('./inc/links.php')?>
     <?php include __DIR__ . "/model/book.php";?>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>

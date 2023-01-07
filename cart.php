@@ -2,7 +2,6 @@
 <html lang="en">
 
 <?php
-require_once('./inc/links.php');
 require_once('inc/header.php');
 include __DIR__ . "/model/book.php";
 include __DIR__ . "/model/order.php";

@@ -53,11 +53,9 @@ class UserDAO {
         $lname = trim($_POST['RegInputSurname']);
         $email = trim($_POST['RegInputEmail']);
         $password = trim($_POST['RegInputPassword']);
-    
-        
 
         // Begin prepare statement
-        $sql = "INSERT INTO user (fname, lname, email, password ) VALUES (?, ?, ?, ?)";
+        $sql = "INSERT INTO user (fname, lname, email, password) VALUES (?, ?, ?, ?)";
         $stmt = $connect->prepare($sql);
 
         // Bind passed variable to prepare statement
