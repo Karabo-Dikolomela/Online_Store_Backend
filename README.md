@@ -13,7 +13,7 @@ This project is a fullstack Online Store app created for the purpose of learning
 ## Guide
 | Steps  | Function |  Display |
 | :------------- | :------------- | :------------- |
-| Home Page | Display  | ![preview](https://github.com/Karabo-Dikolomela/Online_Store_Backend/blob/main/images/readme/hero.png) |
-| Browse | Scroll down to view more features | ![preview](https://github.com/Karabo-Dikolomela/Online_Store_Backend/blob/main/images/readme/newbestsellers.png) |
-| Browse | Scroll down to view more features | ![preview](https://github.com/Karabo-Dikolomela/Online_Store_Backend/blob/main/images/readme/reviews.png) |
-| Browse | Scroll down to view more features | ![preview](https://github.com/Karabo-Dikolomela/Online_Store_Backend/blob/main/images/readme/reachUs.png) |
+| Home Page | Display  | ![preview](https://github.com/Karabo-Dikolomela/Online_Store_Backend/blob/main/static/images/readme/hero.png) |
+| Browse | Scroll down to view more features | ![preview](https://github.com/Karabo-Dikolomela/Online_Store_Backend/blob/main/static/images/readme/newbestsellers.png) |
+| Browse | Scroll down to view more features | ![preview](https://github.com/Karabo-Dikolomela/Online_Store_Backend/blob/main/static/images/readme/reviews.png) |
+| Browse | Scroll down to view more features | ![preview](https://github.com/Karabo-Dikolomela/Online_Store_Backend/blob/main/static/images/readme/reachUs.png) |
