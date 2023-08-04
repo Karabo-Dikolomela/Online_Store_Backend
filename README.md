@@ -1,5 +1,4 @@
 # Online_Store_Backend
-# Hotel_Booking_App
 This project is a fullstack Online Store app created for the purpose of learning and practice. 
 
 ### Technologies
